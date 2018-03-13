@@ -20,21 +20,23 @@ function key() {
     if (userLetter === randLetter) {
         (wins++);
         guessNum = 10;
-        userGuess.splice (0, userGuess.length);
+        userGuess.splice(0, userGuess.length);
 
     } else {
         (guessNum--);
-    }
 
-    if (guessNum === 0) {
-        losses++;
-        guessNum += 10;
-    }
 
-    userGuess.push(userLetter);
+        if (guessNum === 0) {
+            losses++;
+            guessNum += 10;
+        }
 
-    if (userGuess.length === 10) {
-        userGuess.splice (0, 10);
+        userGuess.push(userLetter);
+
+        if (userGuess.length === 10) {
+            userGuess.splice(0, 10);
+        }
+
     }
 
 
