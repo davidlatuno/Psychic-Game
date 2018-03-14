@@ -41,17 +41,13 @@ function key() {
             userGuess.splice(0, 10);
         }
 
-        document.getElementById("wins").innerHTML = wins;
-        document.getElementById("losses").innerHTML = losses;
-        document.getElementById("guessNum").innerHTML = guessNum;
+        document.getElementById("wins").innerHTML = "Wins: " + wins;
+        document.getElementById("losses").innerHTML = "Losses: " + losses;
+        document.getElementById("guessNum").innerHTML = "Guesses Left: " + guessNum;
         document.getElementById("userGuess").innerHTML = userGuess;
     }
 
 }
-
-
-
-
 
 
 
