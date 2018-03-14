@@ -26,45 +26,51 @@
 
     <div class="row">
 
-        <div class="col-md-4">
+        <div class="col-sm-4">
 
             <div class="panel panel-default">
                 <div class="panel-body text-center score">
-                        <div id="wins">Wins: 0</div>
+                    <div>Wins: </div>
+                    <div id="wins"> 0</div>
                 </div>
             </div>
 
         </div>
 
-        <div class="col-md-4">
+        <div class="col-sm-4">
 
             <div class="panel panel-default">
                 <div class="panel-body text-center score">
-                        <div id="losses">Losses: 0</div>
+                    <div>Losses: </div>
+                    <div id="losses">0</div>
                 </div>
             </div>
 
         </div>
 
-        <div class="col-md-4">
+        <div class="col-sm-4">
 
             <div class="panel panel-default">
                 <div class="panel-body text-center score">
-                        <div id="guessNum">Guesses Left: 10</div>
+                    <div>Guesses Left: </div>
+                    <div id="guessNum">10</div>
                 </div>
             </div>
 
         </div>
-    </div> <!-- End of Row 1 -->
+    </div>
+    <!-- End of Row 1 -->
 
     <!-- Row 2 -->
 
     <div class="row">
 
-            <div class="jumbotron text-center">
-                    <h2>Your Guesses So Far: </h2>
-                    <p><div id="userGuess"></div></p>
-                  </div>
+        <div class="jumbotron text-center">
+            <h2>Your Guesses So Far: </h2>
+            <p>
+                <div class="score" id="userGuess"></div>
+            </p>
+        </div>
 
     </div>
     <script src="assets/javascript/game.js"></script>
