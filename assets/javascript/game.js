@@ -16,7 +16,13 @@ function key() {
 
     var userLetter = event.key;
 
-    if (letter.includes(event.key) && userLetter !== userGuess[userGuess.length - 1] && userLetter !== userGuess[userGuess.length - 2] && userLetter !== userGuess[userGuess.length - 3] && userLetter !== userGuess[userGuess.length - 4] && userLetter !== userGuess[userGuess.length - 5] && userLetter !== userGuess[userGuess.length - 6] && userLetter !== userGuess[userGuess.length - 7] && userLetter !== userGuess[userGuess.length - 8] && userLetter !== userGuess[userGuess.length - 9] && userLetter !== userGuess[userGuess.length - 10]) {
+    var include = userGuess.includes(event.key);
+
+    if (letter.includes(event.key)) {
+
+        if (include) {
+            return;
+        }
 
 
         if (userLetter === randLetter) {
