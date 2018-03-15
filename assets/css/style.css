@@ -18,6 +18,38 @@ h1 {
     margin: 0 auto;
 }
 
-.score {
+.score, .guess {
     font-size: 50px;
 }
+
+.jumbotron {
+    background: black !important;
+}
+
+p {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+.guess {
+    color: white;
+}
+
+.wins {
+    color: forestgreen;
+}
+
+.lose {
+    color: crimson;
+}
+
+.left {
+    color: #CCCC00;
+
+}
+
+
+

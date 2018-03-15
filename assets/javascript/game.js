@@ -29,6 +29,7 @@ function key() {
             (wins++);
             guessNum = 10;
             userGuess.splice(0, userGuess.length);
+            userGuess.push("&#x2618;");
 
         } else {
 
@@ -45,6 +46,7 @@ function key() {
 
         if (userGuess.length === 10) {
             userGuess.splice(0, 10);
+            userGuess.push("&#x2618;");
         }
 
         document.getElementById("wins").innerHTML = wins;
