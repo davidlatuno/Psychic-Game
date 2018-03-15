@@ -50,7 +50,7 @@ function key() {
         document.getElementById("wins").innerHTML = wins;
         document.getElementById("losses").innerHTML = losses;
         document.getElementById("guessNum").innerHTML = guessNum;
-        document.getElementById("userGuess").innerHTML = userGuess;
+        document.getElementById("userGuess").innerHTML = userGuess.join(" ");
     }
 
 }
